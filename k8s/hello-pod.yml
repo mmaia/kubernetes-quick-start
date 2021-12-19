@@ -1,0 +1,13 @@
+# Simple Kubernetes Pod to deploy hello nginx app
+apiVersion: v1
+kind: Pod
+metadata:
+  name: hello-pod
+  labels:
+    app: nginx
+spec:
+  containers:
+    - name: web-nginx
+      image: nginxdemos/hello:latest
+      ports:
+        - containerPort: 80
