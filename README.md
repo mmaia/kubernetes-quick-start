@@ -87,11 +87,15 @@ Apply configurations:
 
 `kubectl apply -f svc-config.yml`
 
+You can optionally apply multiple files pointing to a directory so instead of the two commands above you could place those 2 files in a folder for example `k8s` and then run: 
+
+`kubectl apply -f k8s` 
+
 ---
 
 Access your running kubernetes setup application on browser navigate to : 
 
-[http://localhost:31111](http://localhost:31111)
+[http://localhost](http://localhost)
 
 
 Some useful commands: 
